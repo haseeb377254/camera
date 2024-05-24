@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Zoom App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="landing-page" class="page">
+        <h1>Welcome to the Camera Zoom App</h1>
+        <button id="start-button">Start</button>
+    </div>
+    <div id="camera-page" class="page hidden">
+        <video id="video" autoplay playsinline></video>
+        <input type="range" id="zoom-slider" min="1" max="40" step="0.1" value="1">
+        <div class="controls">
+            <button class="mode-button" id="photo-button">Photo</button>
+            <button class="mode-button" id="video-button">Video</button>
+            <button class="mode-button" id="portrait-button">Portrait</button>
+            <button class="mode-button" id="night-button">Super Night</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
